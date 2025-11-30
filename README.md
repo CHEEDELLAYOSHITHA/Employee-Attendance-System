@@ -1,49 +1,12 @@
-# Employee Attendance Management System - Backend
+# React + Vite
 
-## Tech Stack
-- Node.js
-- Express
-- MongoDB (Mongoose)
-- JWT Authentication
-- Jest & Supertest (testing)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Setup
+Currently, two official plugins are available:
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Create a `.env` file in the backend root:
-   ```env
-   MONGO_URI=your_mongo_connection_string
-   JWT_SECRET=your_jwt_secret
-   PORT=5000
-   ```
-3. Start the server:
-   ```bash
-   npm run dev
-   ```
-   or
-   ```bash
-   npm start
-   ```
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Scripts
-- `npm run dev` — Start with nodemon
-- `npm start` — Start with node
-- `npm test` — Run tests
+## Expanding the ESLint configuration
 
-## API Endpoints
-- `POST /auth/login` — Login for both roles
-- `POST /attendance/checkin` — Employee check-in
-- `POST /attendance/checkout` — Employee check-out
-- `GET /attendance/me` — Employee views their own logs
-- `GET /admin/attendance` — Admin views all attendance records
-
-## Project Structure
-- `src/models` — Mongoose models
-- `src/controllers` — Route controllers
-- `src/routes` — Express routes
-- `src/middlewares` — Auth & role middlewares
-- `src/utils` — Utility functions
-- `tests` — Jest/Supertest tests 
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
